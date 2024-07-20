@@ -1,45 +1,76 @@
-.nav-header {
-  box-shadow: 0px 10px 10px -15px #111;
+.header-container {
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 25px;
+}
+.logo-heading {
+  font-size: 26px;
+  color: black;
+}
+.my-order-txt {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(123, 120, 120);
+  padding-right: 10px;
+}
+.cart-icon {
+  font-size: 30px;
+  color: rgb(83, 80, 80);
+}
+.cart-card {
+  display: flex;
+  align-items: center;
+}
+.cart-count {
+  background-color: rgb(248, 110, 110);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  font-weight: 520;
+  position: absolute;
+  margin-left: 18px;
+  margin-bottom: 18px;
 }
 
-.logo-heading {
+.logout-desktop-btn {
   font-family: 'Roboto';
   font-weight: 600;
-  font-size: 35px;
+  font-size: 10px;
+  padding: 8px 16px;
+  color: #ffffff;
+  background-color: #0967d2;
+  border: none;
+  border-radius: 4px;
+  margin-left: 14px;
   cursor: pointer;
+  outline: none;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .logo-heading {
-    font-size: 25px;
+    font-size: 22px;
   }
-}
-
-.my-orders-text {
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 18px;
-  color: #585555;
-}
-
-.cart-icon-container {
-  position: relative;
-}
-
-.cart-count-badge {
-  position: absolute;
-  top: -15px;
-  right: -5px;
-}
-
-.cart-count {
-  text-align: center;
-  background-color: #ff6347;
-  padding: 4px 2px 2px;
-  color: #ffff;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 14px;
-  min-width: 25px;
-  border-radius: 50%;
+  .my-order-txt {
+    display: none;
+  }
+  .cart-icon {
+    font-size: 35px;
+  }
+  .cart-count {
+    margin-left: 20px;
+    margin-bottom: 26px;
+  }
+  .nav-items {
+    padding-right: 10px;
+  }
 }
